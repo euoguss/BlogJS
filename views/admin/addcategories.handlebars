@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-4 text-center">Registre uma Nova Categoria</h2>
+      <form action="/admin/categories/new" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome da Categoria</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+            placeholder="Escreva o nome da Categoria"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="slug" class="form-label">Slug da Categoria</label>
+          <input
+            type="text"
+            class="form-control"
+            id="slug"
+            name="slug"
+            required
+            placeholder="Escreva o slug da Categoria"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Criar Categoria</button>
+      </form>
+    </div>
+  </div>
+</div>
